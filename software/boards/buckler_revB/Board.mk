@@ -45,11 +45,14 @@ BOARD_SOURCES += \
 	app_uart.c\
 	app_util_platform.c\
 	before_startup.c\
+	fds.c\
 	ff.c\
 	hardfault_handler_gcc.c\
 	hardfault_implementation.c\
 	mmc_nrf.c\
 	nrf_assert.c\
+	nrf_atfifo.c\
+	nrf_atflags.c\
 	nrf_atomic.c\
 	nrf_balloc.c\
 	nrf_drv_clock.c\
@@ -60,6 +63,7 @@ BOARD_SOURCES += \
 	nrf_fprintf.c\
 	nrf_fprintf_format.c\
 	nrf_fstorage.c\
+	nrf_fstorage_sd.c\
 	nrf_log_backend_rtt.c\
 	nrf_log_backend_serial.c\
 	nrf_log_backend_uart.c\
@@ -93,10 +97,23 @@ BOARD_SOURCES += \
 	ble_advdata.c\
 	ble_advertising.c\
 	ble_conn_params.c\
+	ble_conn_state.c\
 	ble_srv_common.c\
+	gatt_cache_manager.c\
+	gatts_cache_manager.c\
+	id_manager.c\
 	nrf_ble_gatt.c\
+	nrf_ble_qwr.c\
 	nrf_sdh.c\
 	nrf_sdh_ble.c\
+	peer_database.c\
+	peer_data_storage.c\
+	peer_id.c\
+	peer_manager.c\
+	pm_buffer.c\
+	pm_mutex.c\
+	security_dispatcher.c\
+	security_manager.c\
 	simple_ble.c\
 
 endif
